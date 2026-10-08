@@ -12,7 +12,7 @@ export function AddToCart({ productId }: { productId: string }) {
       onClick={() => {
         add(productId);
         setAdded(true);
-        // No analytics wired in yet. The handler just logs the action.
+        // The handler logs the action.
         console.log("add_to_cart", { productId });
         setTimeout(() => setAdded(false), 1200);
       }}
